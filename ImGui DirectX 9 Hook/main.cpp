@@ -35,7 +35,6 @@ long __stdcall hkEndScene(LPDIRECT3DDEVICE9 pDevice)
 
 DWORD WINAPI MainThread(LPVOID lpReserved)
 {
-	void* d3d9Device[119];
 	if (GetD3D9Device(d3d9Device, sizeof(d3d9Device)))
 	{
 		endSceneAddr = (uintptr_t)d3d9Device[42];
